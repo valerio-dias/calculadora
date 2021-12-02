@@ -1,26 +1,18 @@
-# from tkinter import *
+from tkinter import *
 from calculadora import Calculadora
 
-# # menu_inicial = Tk()
-# # menu_inicial.title("Calculadora")
-# # menu_inicial.mainloop()
-calc = Calculadora()
+tk = Tk()
+tk.title("Calculadora")
+tk['bg'] = '#A8DADC'
+tk.geometry("280x360+0+0")
+tk.resizable(False, False)
+tk.iconbitmap("images/icon.ico")
 
-calc.operando(20)
-print(calc.somar(10)) # teste de classe
+bt1 = Button(tk, text="1", bg="#A8DADC", font=("Arial", 12, "bold"), padx=10, pady=10, bd=2)
+bt1.place(x=10, y=100)
 
-calc.limpar()
-calc.operando(60)
-print(calc.subtrair(20)) # teste de classe
 
-calc.limpar()
-calc.operando(6)
-print(calc.multiplicar(20)) # teste de classe
+tk.mainloop()
 
-calc.limpar()
-calc.operando(60)
-print(calc.dividir(20)) # teste de classe
 
-calc.limpar()
-calc.operando(3)
-print(calc.potencia(3)) # teste de classe
+    
