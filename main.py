@@ -36,17 +36,17 @@ valor = " "
 
 input_valor = StringVar()
 
-input_frame = Frame(tk, width=210, height=85, bd=2, bg="lightgray", highlightbackground="black", highlightcolor="black",
-                    highlightthickness=1, padx=10, pady=10)
+input_frame = Frame(tk, width=210, height=85, bd=0, bg="lightgray", highlightbackground="black", highlightcolor="black",
+                    highlightthickness=0, padx=10, pady=10)
 
 input_frame.pack(side=TOP)
 
-input_field = Entry(input_frame, font=('arial', 18, 'bold'), textvariable=input_valor, width=50, bg="#EEE", bd=0,
+input_entrada = Entry(input_frame, font=('arial', 18, 'bold'), textvariable=input_valor, width=50, bg="#EEE", bd=0,
                     justify=RIGHT)
 
-input_field.grid(row=0, column=0)
+input_entrada.place(x=0, y=0)
 
-input_field.pack(ipady=10)  
+input_entrada.pack(ipady=10, ipadx=5)
 
 
 
