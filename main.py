@@ -36,12 +36,12 @@ valor = " "
 
 input_valor = StringVar()
 
-input_frame = Frame(tk, width=210, height=85, bd=0, bg="lightgray", highlightbackground="black", highlightcolor="black",
+input_frame = Frame(tk, width=210, height=150, bd=0, bg="#BBBBBB", highlightbackground="black", highlightcolor="black",
                     highlightthickness=0, padx=10, pady=10)
 
 input_frame.pack(side=TOP)
 
-input_entrada = Entry(input_frame, font=('arial', 18, 'bold'), textvariable=input_valor, width=50, bg="#EEE", bd=0,
+input_entrada = Entry(input_frame, font=('arial', 30, 'bold'), textvariable=input_valor, width=50, bg="#EEE", bd=0,
                     justify=RIGHT)
 
 input_entrada.place(x=0, y=0)
